@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Meal Of The Day</h1>
+      <h3>
+        Description - Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Explicabo molestiae, odit ipsa consequatur dignissimos, eius saepe
+        aperiam neque esse eveniet quae, quasi veritatis et labore quisquam
+        voluptas. Numquam, velit sit.
+      </h3>
+      <form id="search-form" action="search">
+        <input id="search-term" type="text">
+        <button><img id="search_button" src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt=""></button>
+      </form>
+      <br>
+    </div>
+    <div class="card"><div id="meal-info"></div></div>
+    <div class="meal-card">
+  <img src="meal-image.jpg" class="meal-image" alt="Meal Image">
+  <div class="meal-info"></div>
+</div>
+
+<div class="modal" id="ingredients-modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h3 class="modal-title">Ingredients</h3>
+    <ul class="ingredients-list">
+    </ul>
+  </div>
+</div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
